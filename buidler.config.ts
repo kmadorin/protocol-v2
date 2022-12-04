@@ -69,6 +69,7 @@ const buidlerConfig: any = {
       url: 'http://localhost:8555',
       chainId: COVERAGE_CHAINID,
     },
+    wallaby: getCommonNetworkConfig(eFilecoinNetwork.wallaby, 31415),
     kovan: getCommonNetworkConfig(eEthereumNetwork.kovan, 42),
     ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
     main: getCommonNetworkConfig(eEthereumNetwork.main, 1),

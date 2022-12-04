@@ -6,6 +6,7 @@ import { accounts } from './test-wallets.js';
 import {
   eAvalancheNetwork,
   eEthereumNetwork,
+  eFilecoinNetwork,
   eNetwork,
   ePolygonNetwork,
   eXDaiNetwork,
@@ -99,6 +100,7 @@ const buidlerConfig: HardhatUserConfig = {
       url: 'http://localhost:8555',
       chainId: COVERAGE_CHAINID,
     },
+    wallaby: getCommonNetworkConfig(eFilecoinNetwork.wallaby, 31415),
     kovan: getCommonNetworkConfig(eEthereumNetwork.kovan, 42),
     ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
     main: getCommonNetworkConfig(eEthereumNetwork.main, 1),
